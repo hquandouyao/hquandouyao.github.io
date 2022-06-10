@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- title -->
+
+
+    
+
+<!-- keywords -->
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="h全都要">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="h全都要">
+    
+        <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
+    
+    <meta name="description" content="">
+    <meta name="description" content="😈这是一篇含狗量极高的文如果再给张楽楽小朋友一次机会，那么他一定不会为了一时逗乐去学那声狗叫，吓到了高兴，又被狗记恨上了，还把自己身后两团肉给赔了进去。很亏，亏大发了！ 高兴是九成家的儿子，长得白白胖胖的，又随了父亲的好脾气，跟张九南家窜上窜下的小猴子一比，那真是文静极了。当然，高兴也不是永远那副处事不惊的泰然样儿。不知道是不是拜了九南为师的原因，小孩极怕狗。（张九南微笑脸：关我何事？？）走道儿">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【张九南想小孩】别招惹狗子">
+<meta property="og:url" content="https://hquandouyao.github.io/2022/03/05/%E5%88%AB%E6%8B%9B%E6%83%B9%E7%8B%97%E5%AD%90/index.html">
+<meta property="og:site_name" content="h全都要&#39;s Blog">
+<meta property="og:description" content="😈这是一篇含狗量极高的文如果再给张楽楽小朋友一次机会，那么他一定不会为了一时逗乐去学那声狗叫，吓到了高兴，又被狗记恨上了，还把自己身后两团肉给赔了进去。很亏，亏大发了！ 高兴是九成家的儿子，长得白白胖胖的，又随了父亲的好脾气，跟张九南家窜上窜下的小猴子一比，那真是文静极了。当然，高兴也不是永远那副处事不惊的泰然样儿。不知道是不是拜了九南为师的原因，小孩极怕狗。（张九南微笑脸：关我何事？？）走道儿">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-03-06T03:19:39.000Z">
+<meta property="article:modified_time" content="2022-06-10T02:26:28.916Z">
+<meta property="article:author" content="h全都要">
+<meta property="article:tag" content="台下立规矩">
+<meta property="article:tag" content="张九南">
+<meta property="article:tag" content="张楽楽">
+<meta name="twitter:card" content="summary">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" href="/assets/favicon.jpg">
+    
+    <title>【张九南想小孩】别招惹狗子 · h全都要&#39;s Homepage</title>
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+    (function (w) {
+        'use strict'
+        // rel=preload support test
+        if (!w.loadCSS) {
+            w.loadCSS = function () {}
+        }
+        // define on the loadCSS obj
+        var rp = (loadCSS.relpreload = {})
+        // rel=preload feature support test
+        // runs once and returns a function for compat purposes
+        rp.support = (function () {
+            var ret
+            try {
+                ret = w.document.createElement('link').relList.supports('preload')
+            } catch (e) {
+                ret = false
+            }
+            return function () {
+                return ret
+            }
+        })()
+
+        // if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+        // then change that media back to its intended value on load
+        rp.bindMediaToggle = function (link) {
+            // remember existing media attr for ultimate state, or default to 'all'
+            var finalMedia = link.media || 'all'
+
+            function enableStylesheet() {
+                link.media = finalMedia
+            }
+
+            // bind load handlers to enable media
+            if (link.addEventListener) {
+                link.addEventListener('load', enableStylesheet)
+            } else if (link.attachEvent) {
+                link.attachEvent('onload', enableStylesheet)
+            }
+
+            // Set rel and non-applicable media type to start an async request
+            // note: timeout allows this to happen async to let rendering continue in IE
+            setTimeout(function () {
+                link.rel = 'stylesheet'
+                link.media = 'only x'
+            })
+            // also enable media after 3 seconds,
+            // which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+            setTimeout(enableStylesheet, 3000)
+        }
+
+        // loop through link elements in DOM
+        rp.poly = function () {
+            // double check this to prevent external calls from running
+            if (rp.support()) {
+                return
+            }
+            var links = w.document.getElementsByTagName('link')
+            for (var i = 0; i < links.length; i++) {
+                var link = links[i]
+                // qualify links to those with rel=preload and as=style attrs
+                if (
+                    link.rel === 'preload' &&
+                    link.getAttribute('as') === 'style' &&
+                    !link.getAttribute('data-loadcss')
+                ) {
+                    // prevent rerunning on link
+                    link.setAttribute('data-loadcss', true)
+                    // bind listeners to toggle media back
+                    rp.bindMediaToggle(link)
+                }
+            }
+        }
+
+        // if unsupported, run the polyfill
+        if (!rp.support()) {
+            // run once at least
+            rp.poly()
+
+            // rerun poly on an interval until onload
+            var run = w.setInterval(rp.poly, 500)
+            if (w.addEventListener) {
+                w.addEventListener('load', function () {
+                    rp.poly()
+                    w.clearInterval(run)
+                })
+            } else if (w.attachEvent) {
+                w.attachEvent('onload', function () {
+                    rp.poly()
+                    w.clearInterval(run)
+                })
+            }
+        }
+
+        // commonjs
+        if (typeof exports !== 'undefined') {
+            exports.loadCSS = loadCSS
+        } else {
+            w.loadCSS = loadCSS
+        }
+    })(typeof global !== 'undefined' ? global : this)
+</script>
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s infinite;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+</style>
+
+    <link rel="preload" href="/css/style.css?v=20211217" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/dark.css?v=20211217" as="style">
+    <link rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" href="/css/mobile.css?v=20211217" media="(max-width: 960px)">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" as="script">
+    <link rel="preload" href="/scripts/main.js?v=20211217" as="script">
+    <link rel="preload" href="/scripts/dark.js?v=20211217" as="script">
+    <link rel="preload" href="/font/Oswald-Regular.ttf" as="font" crossorigin>
+    <link rel="preload" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" as="font" crossorigin>
+    <!-- algolia -->
+    
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="h全都要's Blog" type="application/atom+xml">
+</head>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ == undefined) {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/lib/jquery.min.js" />')
+        }
+    </script>
+    
+        <body class="post-body">
+    
+        <!-- header -->
+        <header class="header header-mobile">
+    <!-- top read progress line -->
+    <div class="header-element">
+        <div class="read-progress"></div>
+    </div>
+    <!-- sidebar menu button -->
+    <div class="header-element">
+        
+            <div class="header-sidebar-menu">
+        
+            
+                <div style="padding-left: 1px;">&#xe775;</div>
+            
+        </div>
+    </div>
+    <!-- header actions -->
+    <div class="header-actions">
+        <!-- theme mode switch button -->
+        <span class="header-theme-btn header-element">
+            <i class="fas fa-adjust"></i>
+        </span>
+        <!-- back to home page text -->
+        <span class="home-link header-element">
+            <a href=/>h全都要's Homepage.</a>
+        </span>
+    </div>
+    <!-- toggle banner for post layout -->
+    
+        
+            <div class="banner">
+        
+            <div class="blog-title header-element">
+                <a href="/">h全都要&#39;s Homepage.</a>
+            </div>
+            <div class="post-title header-element">
+                <a href="#" class="post-name">【张九南想小孩】别招惹狗子</a>
+            </div>
+        </div>
+    
+</header>
+
+        <!-- fixed footer -->
+        <footer class="footer-fixed">
+    <!-- back to top button -->
+    <div class="footer-fixed-element">
+        
+            <div class="back-top back-top-hidden">
+        
+        
+            <div>&#xe639;</div>
+        
+        </div>
+    </div>
+</footer>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="site-intro" style="
+
+
+
+
+
+
+
+    height:50vh;
+
+">
+    
+    <!-- 主页  -->
+    
+        
+    <!-- 404页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+                【张九南想小孩】别招惹狗子
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+                
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页 meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="台下立规矩">台下立规矩</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="张九南">张九南</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="张楽楽">张楽楽</a>
+    
+</div>
+
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">2.5k</span>Reading time: <span class="post-count reading-time">8 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <!-- 撰写日期 -->
+                    <span class="iconfont-archer post-intro-calander">&#xe676;</span>
+                    <span class="post-intro-time">2022/03/05</span>
+                    <!-- busuanzi -->
+                    
+                        <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                            <span class="iconfont-archer post-intro-busuanzi">&#xe602;</span>
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    
+                    <!-- 文章分享 -->
+                    <span class="share-wrapper">
+                        <span class="iconfont-archer share-icon">&#xe71d;</span>
+                        <span class="share-text">Share</span>
+                        <ul class="share-list">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+            <script>
+  // get user agent
+  function getBrowserVersions() {
+    var u = window.navigator.userAgent
+    return {
+      userAgent: u,
+      trident: u.indexOf('Trident') > -1, //IE内核
+      presto: u.indexOf('Presto') > -1, //opera内核
+      webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+      gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+      mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+      ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+      android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+      iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+      iPad: u.indexOf('iPad') > -1, //是否为iPad
+      webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+      weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+      uc: u.indexOf('UCBrowser') > -1, //是否为android下的UC浏览器
+    }
+  }
+  var browser = {
+    versions: getBrowserVersions(),
+  }
+  console.log('userAgent: ' + browser.versions.userAgent)
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded')
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document
+        .getElementsByClassName('intro-title')[0]
+        .classList.add('intro-fade-in')
+      document
+        .getElementsByClassName('intro-subtitle')[0]
+        .classList.add('intro-fade-in')
+      var postIntros = document.getElementsByClassName('post-intros')[0]
+      if (postIntros) {
+        postIntros.classList.add('post-fade-in')
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb() {
+    if (browser.versions.uc) {
+      console.log('UCBrowser')
+      fontLoaded()
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular'],
+        },
+        loading: function () {
+          // 所有字体开始加载
+          // console.log('font loading');
+        },
+        active: function () {
+          // 所有字体已渲染
+          fontLoaded()
+        },
+        inactive: function () {
+          // 字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout')
+          fontLoaded()
+        },
+        timeout: 5000, // Set the timeout to two seconds
+      })
+    }
+  }
+
+  function asyncErr() {
+    console.warn('script load from CDN failed, will load local script')
+  }
+
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0]
+    o.src = u
+    if (cb) {
+      o.addEventListener(
+        'load',
+        function (e) {
+          cb(null, e)
+        },
+        false
+      )
+    }
+    if (err) {
+      o.addEventListener(
+        'error',
+        function (e) {
+          err(null, e)
+        },
+        false
+      )
+    }
+    s.parentNode.insertBefore(o, s)
+  }
+
+  var asyncLoadWithFallBack = function (arr, success, reject) {
+    var currReject = function () {
+      reject()
+      arr.shift()
+      if (arr.length) async(arr[0], success, currReject)
+    }
+
+    async(arr[0], success, currReject)
+  }
+
+  asyncLoadWithFallBack(
+    [
+      'https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js',
+      'https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js',
+      "/lib/webfontloader.min.js",
+    ],
+    asyncCb,
+    asyncErr
+  )
+</script>
+
+            <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+            <div class="container container-unloaded">
+                <main class="main post-page">
+    <article class="article-entry">
+        <p>😈这是一篇含狗量极高的文<br>如果再给张楽楽小朋友一次机会，那么他一定不会为了一时逗乐去学那声狗叫，吓到了高兴，又被狗记恨上了，还把自己身后两团肉给赔了进去。很亏，亏大发了！</p>
+<p>高兴是九成家的儿子，长得白白胖胖的，又随了父亲的好脾气，跟张九南家窜上窜下的小猴子一比，那真是文静极了。当然，高兴也不是永远那副处事不惊的泰然样儿。不知道是不是拜了九南为师的原因，小孩极怕狗。（张九南微笑脸：关我何事？？）走道儿上碰上条狗的话，高兴一定会惊慌失措地给狗让道儿。</p>
+<p>那日便是，楽楽和高兴在自家楼下的空地上玩，突然一只小狗从楼里跑出来，欢喜地围着俩小孩转圈。</p>
+<p>小狗很热情，高兴却不那么高兴，他惊慌地抓上了楽楽的胳膊，却听“汪汪汪”几声狗叫，真假难辨。反正狗懵了，高兴吓得跳了起来，张楽楽还没来得及大笑，楼里又冲出一人，对着狗就是一顿责骂。</p>
+<p>张楽楽反应过来，那人应该是狗的主人，她以为是她家狗乱吠吓到高兴了。小孩摸着鼻子心虚地看向地面，才看到那只小狗狗用怨恨又困惑的眼神盯了自己很久很久。</p>
+<p>它仿佛在说：你是狗吧？</p>
+<p>小狗被主人牵走了，楽楽被高兴追着不痛不痒地打了几下，他以为事情就过去了，谁料小孩做了一晚上的梦，梦见他被那只小狗追着撵了一宿。第二天中午眯了一会儿，又梦见小白狗追了他几条街。</p>
+<p>小孩从梦中惊醒，回想起小狗可怜巴巴的眼神，一丝愧疚感油然而生，让狗背锅也太狗了吧？</p>
+<p>补偿补偿狗吧。孩子从存钱罐里取出俩钢镚儿，攥在手心里，去小卖部买了俩根烤肠，吃着根烤肠又拿着根，蹲在墙角等狗。</p>
+<p>没多久，小孩就把自己那根烤肠给吃完了，孩子看着手里另一根，口水馋涎欲滴。</p>
+<p>正咽口水呢，张九南下班回来，见着孩子蹲在屋外，好奇地问了句，“干嘛呢？”</p>
+<p>“等狗。”</p>
+<p>张九南点了点头，正欲推门进屋的手顿了顿，这话味儿不对啊？</p>
+<p>“你小子欠收拾了是吧？”张九南眯起眼睛作威胁状看向孩子，却见小孩速度极快地把手背到身后去。</p>
+<p>张九南居高临下，一眼看穿，“藏啥呢，不就是根肠儿嘛，我能跟你抢嘛。”</p>
+<p>嘴上这么说着，张九南还是一把捞起小孩，一脸坏笑地去逗孩子，“还是我家楽好，知道爸爸上班辛苦，特地买了肠儿给爸爸吃，是不是？”</p>
+<p>孩子惊地瞪圆了眼睛刚想说不是给他的，就见一只小白狗从楼里窜出来，孩子笑眯了眼，扬起了手。</p>
+<p>张九南笑着要接过烤肠，却见孩子手腕一转扔到了地上，小狗叼走了烤肠，他儿子还朝他得意地笑。</p>
+<p>？？？</p>
+<p>小孩的这一举动，在张九南眼里就是：看见没有，给狗吃都不给你。</p>
+<p>张九南深呼两口气，按住隐隐作痛的脾，心中默念，<br>“莫生气，莫生气，<br>人生就像一场戏，因为有缘才相聚。<br>为了小事发脾气，回头想想又何必。<br>别人生气我不气，气出病来无人替。<br>我若气死谁如….”</p>
+<p>《莫生气》没念完，张九南就被他儿子猛捶一下，小孩嘴里嚷着，“啊啊啊啊！都怪你捣乱，我喂错了！”</p>
+<p>我若气死就气死吧！</p>
+<p>张九南猛瞪一眼小孩，孩子嚣张的气焰立马被浇得只剩下三分，孩子声音弱了弱，委屈地指了指狗，“我喂错狗了，不是这只……都怪你！”</p>
+<p>张九南：？？？</p>
+<p>“那只是通身白的，这只尾巴是黑的！！啊啊啊！我喂错了！”孩子气地直跺脚。</p>
+<p>小狗看了眼奇怪的人类，吃得更快了些。</p>
+<p>一听烤肠本来就是给狗的，张九南心情稍霁，无所谓道，“错了就错了呗，你总不能抢回来吧。”</p>
+<p>小狗竖起耳朵，！！！，叼起没剩几口的竹签子就跑了。</p>
+<p>张九南刚想感叹一句“这狗真灵”，就见他儿子奋起去追狗，嚷着，“把肠儿还给我！”</p>
+<p>张九南今天是被无语死的，暗自啐了句国粹，拔腿也去逮孩子去了。</p>
+<p>还好，小孩没到青春发育期，张九南这老胳膊老腿地几步就追上了，没让孩子真去撵狗，不然真叫不像话。</p>
+<p>到底是不年轻了，张九南喘了好口气后，攥着孩子胳膊，照着身后就是一下，“再跑？！”</p>
+<p>孩子嗷呜一声护住身后，撇着嘴委委屈屈，“我的肠儿～”</p>
+<p>孩子半天不愿挪步，又被张九南踢一脚，“肠儿肠儿，我看你像肠儿，回家！”</p>
+<p>面对黑着脸的活阎王，小孩一下子就蔫儿了，顾不上揉屁股就小跑两步跟上父亲。越近家门，小孩心里的鼓敲得越响。</p>
+<p>果然，一进家门，他换完鞋还没来得及跑就被张九南几脚踹进了书房。</p>
+<p>孩子揉着腿根，几滴眼泪逼到眼角，看见人抄起戒尺让他过去，眼泪唰地就掉了下来，可还是挪着步慢慢往人那儿移，“我错了……”</p>
+<p>小孩认错第一快，张九南听了面不改色，只拍了拍大腿，让孩子趴上来。</p>
+<p>每当这个时候，虽然不想承认，但张九南真的觉得他儿子很像只小狗狗，平日里耀武扬威，板子要上身的时候就乖得不行，总算能夹起尾巴做人了。</p>
+<p>而此时，正值夏天，很“乖”的小狗狗捧着老父亲的一腿“毛裤”无从下手，不敢薅毛，又忍不住得想去扽。</p>
+<p>冰硬的尺子刚贴到孩子身后，小孩吓得一激灵，手一抖揪下几根腿毛。</p>
+<p>张九南内心一万匹草泥马奔腾而过。他抖了抖腿，一把拎起缩着脑袋连声道歉的小崽，又不忍训了，点了点桌面，“没事儿，你趴这儿。”</p>
+<p>一站直，松垮的运动裤一下子堆在脚踝上，孩子的脸蹭得一下烧了起来，连带着后颈都是红的，小孩忙趴好，但是因为刚到趴着能够到书桌的个子，小孩两条腿绷着，总觉着比以往都疼。</p>
+<p>“呜….我知道错了！”孩子痛得直扭身子，没挨几下就开始求饶。</p>
+<p>“再动？”张九南眉毛微皱，抬手按住了小孩的腰，又落下了更重的一记。</p>
+<p>孩子又呜了一声没敢再求饶，直到满了十下，板子停了下来，小孩才又把手微微探到身后挡着，说，“我不应该去追狗。”</p>
+<p>张九南一只手反制住小孩的手腕，戒尺高高扬起又是十记，训道，“我是不是说过，没事儿别去招惹狗，哪天碰着个凶的咬你一口，怎么办？”</p>
+<p>孩子的身后薄薄肿起一层，戒尺压过又弹起，几道隆肿便亘在皮肤上。小孩痛得眼泪扑簌簌地往桌子上掉，忙说，“呜呜…..不敢了！”<br>因为这句话在他听来，跟“没事儿少招惹我，不然我生气了就打你”没什么区别。</p>
+<p>好吧，又把爸爸想代入成狗了，孩子愧疚地想着不能这样，就听父亲问，“对了，为啥给狗买肠儿？狗还必须得是通身白的？”</p>
+<p>“……”能不能别问狗的问题了？这叫他怎么答？</p>
+<p>孩子支支吾吾地不知道怎么答，又被责了一记，“呜！我就想给那只狗买肠儿不行嘛！”</p>
+<p>张九南冷呵一声，抬手又是两记，“平常我都吃不到你买的肠儿，你还给狗买？”</p>
+<p>咱能不能不跟狗比？</p>
+<p>孩子嗷嗷两声，忙说，“我下回给你买！”</p>
+<p>这话说出口，孩子才觉着不对劲儿，没等反应过来，腰上按着他的那股劲儿重了些，孩子忙说，“我没有说您是狗的意思！！嗷嗷啊！”</p>
+<p>板子反而更重了些，张九南厉声道，“别扯这些没用的，我问你为啥给狗买烤肠？！”</p>
+<p>孩子又是支支吾吾说不出来话的样子，张九南神色一凌，以他对他儿子的了解，张九南脱口而出，“你做什么对不起狗的事儿了？”</p>
+<p>这话怎么听怎么变扭，但……确实算是？</p>
+<p>孩子犹豫地点了点头，扭过身子刚想细说，又被人按住，噼里啪啦又是两三下，做父亲的厉声训道，“打小儿我就跟你说要爱护小动物！”</p>
+<p>？！！</p>
+<p>您想岔劈了吧？</p>
+<p>“我没有不爱护小动物啊，我就是…”小孩扭过身子看向父亲，咽了咽口水，将事情从头说来。</p>
+<p>《关于我学狗叫还让狗背锅又补偿错狗这件事》</p>
+<p>张九南听完，微微挑起眉头。</p>
+<p>离谱，真离谱。</p>
+<p>孩子说完，两只手微微掩住身后，含着眼泪可怜兮兮地问，“还罚吗？”</p>
+<p>九南扔下戒尺，“你这个月就在楼下蹲着吧，看那狗原不原谅你！”</p>
+<h3 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h3><p>九南家的小狗狗。小狗狗就是你弱我就欺负你，你强我就嘤嘤嘤。</p>
+
+    </article>
+    <!-- license -->
+    
+        <div class="license-wrapper">
+            <p>Author：<a href="https://hquandouyao.github.io">h全都要</a>
+            <p>Link：<a href="https://hquandouyao.github.io/2022/03/05/%E5%88%AB%E6%8B%9B%E6%83%B9%E7%8B%97%E5%AD%90/">https://hquandouyao.github.io/2022/03/05/%E5%88%AB%E6%8B%9B%E6%83%B9%E7%8B%97%E5%AD%90/</a>
+            <p>Publish date：<a href="https://hquandouyao.github.io/2022/03/05/%E5%88%AB%E6%8B%9B%E6%83%B9%E7%8B%97%E5%AD%90/">March 5th 2022, 7:19:39 pm</a>
+            <p>Update date：<a href="https://hquandouyao.github.io/2022/03/05/%E5%88%AB%E6%8B%9B%E6%83%B9%E7%8B%97%E5%AD%90/">June 9th 2022, 7:26:28 pm</a>
+            <p>License：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href="/2022/03/26/%E8%80%81%E8%99%8E%E5%9C%A8%E5%AE%B6/" title="【堂良x小孩】老虎在家">
+                    <div class="nextTitle">【堂良x小孩】老虎在家</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2022/02/19/%E4%B8%8D%E4%B8%BA%E6%89%93%E7%BF%BB%E7%9A%84%E7%89%9B%E5%A5%B6%E5%93%AD%E6%B3%A3/" title="【孟鹤堂x小孩】不为打翻的牛奶哭泣">
+                    <div class="prevTitle">【孟鹤堂x小孩】不为打翻的牛奶哭泣</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- comment -->
+    
+        <div class="post-comment">
+            <!-- 来必力 City 版安装代码 -->
+
+
+            
+
+            
+
+            
+
+            <!-- utteranc评论 -->
+
+
+            <!-- partial('_partial/comment/changyan') -->
+            <!--PC版-->
+
+
+            
+            
+
+            
+
+        </div>
+    
+    <!-- timeliness note -->
+    <!-- idea from: https://hexo.fluid-dev.com/posts/hexo-injector/#%E6%96%87%E7%AB%A0%E6%97%B6%E6%95%88%E6%80%A7%E6%8F%90%E7%A4%BA -->
+    
+    <!-- Mathjax -->
+    
+</main>
+
+                <!-- profile -->
+                
+            </div>
+            <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+        <div class="social">
+            
+    
+        
+    
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title=wechat>
+                    
+                    <img class="profile-qr" src="/assets/example_qr.png" />
+                </span>
+            
+        
+    
+        
+    
+        
+    
+        
+            
+                <a href="https://weibo.com/u/7517025799" class="iconfont-archer weibo" target="_blank" title=weibo></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <a href="https://zwk302.lofter.com" class="iconfont-archer others" target="_blank" title=others></a>
+            
+        
+    
+        
+    
+
+
+        </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/h全都要/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div>
+    <!-- website approve for Chinese user -->
+    
+    <!-- 不蒜子  -->
+    
+        <div class="busuanzi-container">
+            
+             
+                <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span> :)</span>
+            
+        </div>
+    	
+</footer>
+
+        </div>
+        <!-- toc -->
+        
+            <div class="toc-wrapper toc-wrapper-loding" style=
+
+
+
+
+
+
+
+    top:50vh;
+
+>
+                <div class="toc-catalog">
+                    <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+                </div>
+                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%A2%8E%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text">碎碎念</span></a></li></ol>
+            </div>
+        
+        <!-- sidebar -->
+        <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+        <div class="sidebar-panel-archives">
+    <!-- 在 ejs 中将 archive 按照时间排序 -->
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 25
+        </div>
+        <!-- search  -->
+        
+    </div>
+    
+    <div class="post-archive">
+    
+        
+            
+            
+            <div class="archive-year"> 2022 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/09</span>
+            <a class="archive-post-title" href="/2022/06/09/%E5%81%B7%E5%BE%97%E5%A5%BD%E5%87%A0%E6%97%A5%E9%97%B2/">【张云雷x小孩】偷得好几日闲</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/26</span>
+            <a class="archive-post-title" href="/2022/03/26/%E8%80%81%E8%99%8E%E5%9C%A8%E5%AE%B6/">【堂良x小孩】老虎在家</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/05</span>
+            <a class="archive-post-title" href="/2022/03/05/%E5%88%AB%E6%8B%9B%E6%83%B9%E7%8B%97%E5%AD%90/">【张九南想小孩】别招惹狗子</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/19</span>
+            <a class="archive-post-title" href="/2022/02/19/%E4%B8%8D%E4%B8%BA%E6%89%93%E7%BF%BB%E7%9A%84%E7%89%9B%E5%A5%B6%E5%93%AD%E6%B3%A3/">【孟鹤堂x小孩】不为打翻的牛奶哭泣</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/21</span>
+            <a class="archive-post-title" href="/2022/01/21/%E3%80%90%E4%B9%9D%E5%8D%8Ex%E7%A7%A6%E5%8B%89%E3%80%91%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E7%8E%AF/">【何九华x小孩】莫比乌斯环</a>
+        </li>
+    
+        
+            
+            
+                
+                </ul>
+            
+            <div class="archive-year"> 2021 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/31</span>
+            <a class="archive-post-title" href="/2021/12/31/%E7%88%B8%E7%88%B8%E7%9A%84%E5%A5%BD%E5%A4%A7%E5%84%BF/">【张九龄x小孩】爸爸的好大儿</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/27</span>
+            <a class="archive-post-title" href="/2021/12/27/%E3%80%90%E4%BD%95%E4%B9%9D%E5%8D%8Ex%E5%B0%8F%E5%AD%A9%E3%80%91%E5%B9%B3%E5%AE%89%E5%A4%9C%E4%B8%8D%E5%B9%B3%E5%AE%89/">【何九华x小孩】平安夜不平安</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/07</span>
+            <a class="archive-post-title" href="/2021/12/07/%E7%9C%9F%E5%81%87%E6%8D%A7%E5%93%8F/">【堂良x小孩】真假捧哏</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/30</span>
+            <a class="archive-post-title" href="/2021/11/30/%E3%80%90%E5%9B%9B%E5%A4%A7%E5%B7%A8%E5%A4%B4%E3%80%91%E6%88%91%E5%84%BF%E5%AD%90%E6%98%AF%E5%A4%A7%E5%A4%A7%EF%BC%9F/">【四大巨头】我儿子是大大？</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/27</span>
+            <a class="archive-post-title" href="/2021/11/27/%E3%80%90%E6%A1%83x%E6%9E%97%E9%A5%BC%E5%AE%89%E8%BF%AA%E3%80%91%E8%B0%81%E4%B9%9F%E6%B2%A1%E9%80%83%E4%BA%86/">【桃x林饼安迪】谁也没逃了</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/22</span>
+            <a class="archive-post-title" href="/2021/11/22/%E3%80%90%E9%BE%84%E9%BE%99x%E5%B0%8F%E5%AD%A9%E3%80%91%E7%BA%B9%E8%BA%AB/">【龄龙x小孩】纹身</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/20</span>
+            <a class="archive-post-title" href="/2021/11/20/%E8%A6%81%E8%AE%B0%E5%BE%97%E5%A4%B8%E6%88%91/">【郭麒麟x小孩】要记得夸我</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/06</span>
+            <a class="archive-post-title" href="/2021/02/06/%E3%80%90%E9%98%8E%E9%B9%A4%E7%A5%A5x%E5%B0%8F%E5%AD%A9%E3%80%91%E5%A3%AE%E5%A3%AE%E5%B0%8F%E6%9C%8B%E5%8F%8B/">【阎鹤祥x小孩】壮壮小朋友</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/05</span>
+            <a class="archive-post-title" href="/2021/02/05/%E3%80%90%E4%BD%95%E4%B9%9D%E5%8D%8Ex%E5%B0%8F%E5%AD%A9%E3%80%91%E9%83%BD%E6%98%AF%E6%B8%B8%E6%88%8F%E6%9C%BA%E7%9A%84%E9%94%85/">【何九华x小孩】都是游戏机的锅~</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/02</span>
+            <a class="archive-post-title" href="/2021/02/02/%E3%80%90%E7%A7%A6%E9%9C%84%E8%B4%A4x%E5%B0%8F%E5%AD%A9%E3%80%91%E5%A5%BD%E5%93%A5%E5%84%BF%E4%BB%AC/">【秦霄贤x小孩】好哥儿们</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/31</span>
+            <a class="archive-post-title" href="/2021/01/31/%E3%80%90%E5%B0%9A%E4%B9%9D%E7%86%99x%E5%B0%8F%E5%AD%A9%E3%80%91%E9%97%B9%E8%85%BE/">【尚九熙x小孩】闹腾</a>
+        </li>
+    
+        
+            
+            
+                
+                </ul>
+            
+            <div class="archive-year"> 2020 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/27</span>
+            <a class="archive-post-title" href="/2020/12/27/%E3%80%90%E4%BA%8C%E7%88%B7x%E5%B0%8F%E5%AD%A9%E3%80%91%E4%B8%8A%E5%AE%B6%E4%BD%8F/">【九辫x小孩】上家住</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/20</span>
+            <a class="archive-post-title" href="/2020/12/20/%E3%80%90%E4%B9%9D%E5%8D%8Ex%E4%BD%95%E8%A8%80%E3%80%91%E6%9C%89%E5%BA%A6/">【何九华x小孩】有度</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/19</span>
+            <a class="archive-post-title" href="/2020/12/19/%E3%80%90%E4%B9%9D%E9%83%8Ex%E5%B0%8F%E5%AD%A9%E3%80%91%E7%90%83%E8%B5%9B%EF%BC%81%EF%BC%81/">【杨九郎x小孩】球赛！！</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/18</span>
+            <a class="archive-post-title" href="/2020/12/18/%E3%80%90%E4%B9%9D%E8%BE%ABx%E5%B0%8F%E5%AD%A9%E3%80%91%E5%B0%8F%E5%B0%8F%E8%BE%AB%E5%84%BF/">【九辫x小孩】小小辫儿</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/16</span>
+            <a class="archive-post-title" href="/2020/12/16/%E7%A6%BB%E5%AE%B6%E5%87%BA%E8%B5%B0/">【孟鹤堂x小孩】离家出走</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/15</span>
+            <a class="archive-post-title" href="/2020/12/15/%E7%A2%B0%E7%83%9F%EF%BC%9F%E6%80%95%E6%98%AF%E4%B8%8D%E8%A1%8C/">【何九华x小孩】碰烟？怕是不行。</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/14</span>
+            <a class="archive-post-title" href="/2020/12/14/%E5%B9%B2%E7%88%B9%E5%B0%8F%E6%B0%94/">【周九良x小孩】干爹小气</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/13</span>
+            <a class="archive-post-title" href="/2020/12/13/%E5%8F%8C%E9%B1%BC/">【尚九熙x小孩】双鱼</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/13</span>
+            <a class="archive-post-title" href="/2020/12/13/%E5%B9%B2%E4%BB%96/">【熙华x小孩】干他！</a>
+        </li>
+    
+    </div>
+</div>
+
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+        
+            <span class="sidebar-tag-name" data-tags="何九华">
+                <span class="iconfont-archer">&#xe606;</span>
+                何九华
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="何言/言仔">
+                <span class="iconfont-archer">&#xe606;</span>
+                何言/言仔
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="台下立规矩">
+                <span class="iconfont-archer">&#xe606;</span>
+                台下立规矩
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="秦勉/小米">
+                <span class="iconfont-archer">&#xe606;</span>
+                秦勉/小米
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="张云雷">
+                <span class="iconfont-archer">&#xe606;</span>
+                张云雷
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="杨九郎">
+                <span class="iconfont-archer">&#xe606;</span>
+                杨九郎
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="九辫">
+                <span class="iconfont-archer">&#xe606;</span>
+                九辫
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="张安溢/多多">
+                <span class="iconfont-archer">&#xe606;</span>
+                张安溢/多多
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="杨帆">
+                <span class="iconfont-archer">&#xe606;</span>
+                杨帆
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="郭麒麟">
+                <span class="iconfont-archer">&#xe606;</span>
+                郭麒麟
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="郭汾阳/Andy">
+                <span class="iconfont-archer">&#xe606;</span>
+                郭汾阳/Andy
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="张九龄">
+                <span class="iconfont-archer">&#xe606;</span>
+                张九龄
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="王九龙">
+                <span class="iconfont-archer">&#xe606;</span>
+                王九龙
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="张听白">
+                <span class="iconfont-archer">&#xe606;</span>
+                张听白
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="王明墨">
+                <span class="iconfont-archer">&#xe606;</span>
+                王明墨
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="龄龙">
+                <span class="iconfont-archer">&#xe606;</span>
+                龄龙
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="周九良">
+                <span class="iconfont-archer">&#xe606;</span>
+                周九良
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="孟鹤堂">
+                <span class="iconfont-archer">&#xe606;</span>
+                孟鹤堂
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="堂良">
+                <span class="iconfont-archer">&#xe606;</span>
+                堂良
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="周全/全哥儿">
+                <span class="iconfont-archer">&#xe606;</span>
+                周全/全哥儿
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="周正/正哥儿">
+                <span class="iconfont-archer">&#xe606;</span>
+                周正/正哥儿
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="孟元诚/橙子">
+                <span class="iconfont-archer">&#xe606;</span>
+                孟元诚/橙子
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="孟元庆/小庆">
+                <span class="iconfont-archer">&#xe606;</span>
+                孟元庆/小庆
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="熙华">
+                <span class="iconfont-archer">&#xe606;</span>
+                熙华
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="尚九熙">
+                <span class="iconfont-archer">&#xe606;</span>
+                尚九熙
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="尚温余/小鱼儿">
+                <span class="iconfont-archer">&#xe606;</span>
+                尚温余/小鱼儿
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="秦霄贤">
+                <span class="iconfont-archer">&#xe606;</span>
+                秦霄贤
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="阎鹤祥">
+                <span class="iconfont-archer">&#xe606;</span>
+                阎鹤祥
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="阎听">
+                <span class="iconfont-archer">&#xe606;</span>
+                阎听
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="郭德纲">
+                <span class="iconfont-archer">&#xe606;</span>
+                郭德纲
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="烧饼">
+                <span class="iconfont-archer">&#xe606;</span>
+                烧饼
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="张九南">
+                <span class="iconfont-archer">&#xe606;</span>
+                张九南
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="张楽楽">
+                <span class="iconfont-archer">&#xe606;</span>
+                张楽楽
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="郭乐只/Hubery">
+                <span class="iconfont-archer">&#xe606;</span>
+                郭乐只/Hubery
+            </span>
+        
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+        缺失模块，请参考主题文档进行安装配置：https://github.com/h全都要/hexo-theme-archer#%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+        <span class="sidebar-category-name" data-categories="当我社老爷们儿有了儿子">
+            <span class="iconfont-archer">&#xe60a;</span>
+            当我社老爷们儿有了儿子
+        </span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+
+    </div>
+</div>
+
+        <!-- site-meta -->
+        <script>
+    var siteMetaRoot = "/"
+    if (siteMetaRoot === "undefined") {
+        siteMetaRoot = '/'
+    }
+    var siteMeta = {
+        url: "https://hquandouyao.github.io",
+        root: siteMetaRoot,
+        author: "h全都要"
+    }
+</script>
+
+        <!-- import experimental options here -->
+        <!-- Custom Font -->
+
+
+        <!-- main func -->
+        <script src="/scripts/main.js?v=20211217"></script>
+        <!-- dark mode -->
+        <script src="/scripts/dark.js?v=20211217"></script>
+        <!-- fancybox -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
+        <!-- algolia -->
+        
+        <!-- busuanzi -->
+        
+            <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+        
+        <!-- CNZZ -->
+        
+        <!-- async load share.js -->
+        
+            <script src="/scripts/share.js?v=20211217" async></script>
+        
+        <!-- mermaid -->
+        
+            <script src='https://cdn.jsdelivr.net/npm/mermaid@8.11.0/dist/mermaid.min.js'></script>
+            <script>
+                if (window.mermaid) {
+                    mermaid.initialize({theme: 'dark'});
+                }
+            </script>
+        
+    </body>
+</html>
